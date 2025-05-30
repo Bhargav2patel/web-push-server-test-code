@@ -2,7 +2,7 @@ const publicVapidKey = 'BC-tc5UZXuVPNBjeGD81fGcKewpYB3-q6SGJW-MzZCslkhEpQ6NEkEyN
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', async () => {
-        const reg = await navigator.serviceWorker.register('/sw.js');
+        const reg = await navigator.serviceWorker.register('sw.js');
 
         document.getElementById('subscribe').onclick = async () => {
             const permission = await Notification.requestPermission();
