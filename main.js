@@ -16,13 +16,14 @@ if ('serviceWorker' in navigator) {
                 applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
             });
 
-            await fetch('https://giant-women-bake.loca.lt/subscribe', { // Replace with your PC IP
+            await fetch('https://web-push-server-1.onrender.com/subscribe', {
                 method: 'POST',
                 body: JSON.stringify(subscription),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             });
+            console.log('Subscription successful:', subscription);
 
             alert('Subscribed to push notifications!');
         };
