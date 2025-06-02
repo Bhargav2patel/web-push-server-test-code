@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
                 applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
             });
 
-            await fetch('http://192.168.1.18:4000/subscribe', { // Replace with your PC IP
+            await fetch('https://giant-women-bake.loca.lt/subscribe', { // Replace with your PC IP
                 method: 'POST',
                 body: JSON.stringify(subscription),
                 headers: {
